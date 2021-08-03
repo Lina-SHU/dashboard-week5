@@ -1,0 +1,52 @@
+/* header */
+.header{
+  position: fixed;
+  max-width: 266px;
+  min-height: 100vh;
+  h1{
+    a{
+      width: 100%;
+      @include title;
+      background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/logo-ANSWER.svg') no-repeat;
+      width: 151px;
+      height: 40px;
+    }
+  }
+}
+
+.navbar-nav{
+  .nav-item{
+    margin-bottom: 12px;
+  }
+  .nav-link{
+    color: $gray-900;
+    padding-left: $spacer*2;
+    &:hover{
+      color: $success;
+      padding-left: 28px;
+      border-left: 4px solid $success;
+    }
+  }
+  .active{
+    color: $success;
+    padding-left: 28px;
+    border-left: 4px solid $success;
+  }
+}
+
+.author{
+  .author-img{
+    img{
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+  p{
+    font-size: $font-size-sm;
+  }
+}
+
+
+
