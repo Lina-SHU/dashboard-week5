@@ -79,7 +79,7 @@
   display: none;
 }
 
-.readonlyStyle{
+.form-control:read-only {
   background: $gray-100;
   border: 0;
 }
