@@ -59,10 +59,10 @@ body {
 
 hr {
   margin: 1rem 0;
-  color: inherit;
+  color: #ced4da;
   background-color: currentColor;
   border: 0;
-  opacity: 0.25;
+  opacity: 1;
 }
 
 hr:not([size]) {
@@ -2300,7 +2300,7 @@ progress {
   color: #212529;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid #212529;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -2538,7 +2538,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
   background-size: 16px 12px;
-  border: 1px solid #ced4da;
+  border: 1px solid #212529;
   border-radius: 0.25rem;
   -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -2993,7 +2993,7 @@ textarea.form-control-lg {
   text-align: center;
   white-space: nowrap;
   background-color: #e9ecef;
-  border: 1px solid #ced4da;
+  border: 1px solid #212529;
   border-radius: 0.25rem;
 }
 
@@ -11957,6 +11957,15 @@ code {
   font-family: "Roboto Mono", monospace;
 }
 
+.notVerified button {
+  border-color: #ced4da;
+}
+
+.isVerified button {
+  border-color: #ced4da;
+  color: #ced4da;
+}
+
 /* header */
 .header {
   position: fixed;
@@ -12005,10 +12014,6 @@ code {
 
 .author p {
   font-size: 0.875rem;
-}
-
-.form-select {
-  width: auto;
 }
 
 .list-group-item {
@@ -12084,6 +12089,7 @@ code {
 .pagination .page-item.active .page-link {
   color: #fff;
   background: #198754;
+  border-color: #198754;
 }
 
 .pagination .page-link-icon {
@@ -12101,15 +12107,36 @@ code {
   padding-bottom: 1rem;
 }
 
-.person-img {
+.person-content {
   width: 141px;
 }
 
-.person-img img {
+.person-content img {
   width: 141px;
   height: 141px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.modal .modal-footer button {
+  margin: 0;
+}
+
+.notVerified {
+  display: none;
+}
+
+.isVerified {
+  display: none;
+}
+
+.isDectivate {
+  display: none;
+}
+
+.readonlyStyle {
+  background: #f8f9fa;
+  border: 0;
 }
 
 /*# sourceMappingURL=all.css.map */
