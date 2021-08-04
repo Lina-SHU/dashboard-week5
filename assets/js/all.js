@@ -37,8 +37,8 @@ if (document.title === "首頁") {
     } else if (value === 'edit') {
       accountName.value = "Emir Wicks";
       email.value = "emir.wicks@mail.com";
-      accountName.classList.add('readonlyStyle');
-      email.classList.add('readonlyStyle');
+      accountName.setAttribute('readonly', true);
+      email.setAttribute('readonly', true);
     }
   }; // verified
 
@@ -62,8 +62,8 @@ if (document.title === "首頁") {
 
 
   var removeSet = function removeSet() {
-    accountName.classList.remove('readonlyStyle');
-    email.classList.remove('readonlyStyle');
+    accountName.removeAttribute('readonly');
+    email.removeAttribute('readonly');
     notVerified.classList.remove('d-block');
     isVerified.classList.remove('d-block');
     isDectivate.classList.remove('d-block');
