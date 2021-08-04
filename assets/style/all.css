@@ -12122,6 +12122,19 @@ code {
   margin: 0;
 }
 
+.expandLess {
+  display: none;
+}
+
+.sendMailBtn {
+  color: #198754;
+}
+
+.sendMailBtn:hover {
+  background: #198754;
+  color: #fff;
+}
+
 .notVerified {
   display: none;
 }

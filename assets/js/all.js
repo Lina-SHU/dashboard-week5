@@ -27,6 +27,37 @@ if (document.title === "首頁") {
     } else if (value === 'edit') {
       modalTitle.textContent = 'Edit Admin';
     }
+  }; // 個人資料
+
+
+  var person = function person(value) {
+    if (value === 'new') {
+      accountName.value = "";
+      email.value = "";
+    } else if (value === 'edit') {
+      accountName.value = "Emir Wicks";
+      email.value = "emir.wicks@mail.com";
+      accountName.classList.add('readonlyStyle');
+      email.classList.add('readonlyStyle');
+    }
+  }; // verified
+
+
+  var verified = function verified(value) {
+    if (value === 'new') {
+      notVerified.classList.add('d-block');
+    } else if (value === 'edit') {
+      isVerified.classList.add('d-block');
+    }
+  }; // accessLevel
+
+
+  var access = function access(value) {
+    if (value === 'new') {
+      accessLevel.value = "";
+    } else if (value === 'edit') {
+      accessLevel.value = "admin";
+    }
   }; // remove
 
 
@@ -38,7 +69,16 @@ if (document.title === "首頁") {
     isDectivate.classList.remove('d-block');
   };
 
+  /* collapse */
+  var collapseBtn = document.querySelector('.collapseBtn');
+  var expandMore = document.querySelector('.expandMore');
+  var expandLess = document.querySelector('.expandLess');
+  collapseBtn.addEventListener('click', function () {
+    expandLess.classList.toggle('d-block');
+    expandMore.classList.toggle('d-none');
+  });
   /* update modal */
+
   var accountName = document.querySelector('#name');
   var email = document.querySelector('#email');
   var modalTitle = document.querySelector('.modal-title');
@@ -51,24 +91,16 @@ if (document.title === "首頁") {
   newModal.addEventListener('click', function () {
     removeSet();
     title('new');
-    accountName.value = "";
-    email.value = "";
-    accessLevel.value = "";
-    notVerified.classList.add('d-block');
+    person('new');
+    verified('new');
+    access('new');
   });
   editModal.addEventListener('click', function () {
-    removeSet(); // 標題名稱
-
-    title('edit'); // 個人資料
-
-    accountName.value = "Emir Wicks";
-    email.value = "emir.wicks@mail.com";
-    accountName.classList.add('readonlyStyle');
-    email.classList.add('readonlyStyle'); // verified
-
-    isVerified.classList.add('d-block'); // Access Level
-
-    accessLevel.value = "admin"; // isDectivate
+    removeSet();
+    title('edit');
+    person('edit');
+    verified('edit');
+    access('edit'); // isDectivate
 
     isDectivate.classList.add('d-block');
   });
