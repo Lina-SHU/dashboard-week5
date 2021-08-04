@@ -30,3 +30,16 @@ code{
   color: $success;
   font-family: $font-mono;
 }
+
+.notVerified{
+  button{
+    border-color: $gray-400;
+  }
+}
+
+.isVerified{
+  button{
+    border-color: $gray-400;
+    color: $gray-400;
+  }
+}

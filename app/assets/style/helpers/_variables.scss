@@ -504,9 +504,9 @@ $blockquote-footer-color:     $gray-600 !default;
 $blockquote-footer-font-size: $small-font-size !default;
 
 $hr-margin-y:                 $spacer !default;
-$hr-color:                    inherit !default;
+$hr-color:                    $gray-400 !default;
 $hr-height:                   $border-width !default;
-$hr-opacity:                  .25 !default;
+$hr-opacity:                  1 !default;
 
 $legend-margin-bottom:        .5rem !default;
 $legend-font-size:            1.5rem !default;
@@ -700,7 +700,7 @@ $input-disabled-bg:                     $gray-200 !default;
 $input-disabled-border-color:           null !default;
 
 $input-color:                           $body-color !default;
-$input-border-color:                    $gray-400 !default;
+$input-border-color:                    $gray-900 !default;
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      $box-shadow-inset !default;
 

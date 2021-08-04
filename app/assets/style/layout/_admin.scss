@@ -17,6 +17,7 @@
   .page-item.active .page-link{
     color: $white;
     background: $success;
+    border-color: $success;
   }
   .page-link-icon{
     padding: 4px;
@@ -37,11 +38,36 @@
   }
 }
 
-.person-img{
+.person-content{
   width: 141px;
   img{
     width: 141px;
     height: 141px;
     object-fit: cover;
   }
+}
+
+.modal{
+  .modal-footer{
+    button{
+      margin: 0;
+    }
+  }
+} 
+
+.notVerified{
+  display: none;
+}
+
+.isVerified{
+  display: none;
+}
+
+.isDectivate{
+  display: none;
+}
+
+.readonlyStyle{
+  background: $gray-100;
+  border: 0;
 }
