@@ -20,6 +20,16 @@ if (document.title === "首頁"){
     authorEdit.classList.remove('d-block');
   })
 } else if (document.title === "管理頁"){
+  /* collapse */
+  const collapseBtn = document.querySelector('.collapseBtn');
+  const expandMore = document.querySelector('.expandMore');
+  const expandLess = document.querySelector('.expandLess');
+
+  collapseBtn.addEventListener('click', function(){
+    expandLess.classList.toggle('d-block');
+    expandMore.classList.toggle('d-none');
+  })
+
   /* update modal */
   const accountName = document.querySelector('#name');
   const email = document.querySelector('#email');
@@ -34,25 +44,17 @@ if (document.title === "首頁"){
   newModal.addEventListener('click', function () {
     removeSet();
     title('new');
-    accountName.value = "";
-    email.value = "";
-    accessLevel.value = "";
-    notVerified.classList.add('d-block');
+    person('new');
+    verified('new');
+    access('new');
   });
 
   editModal.addEventListener('click', function(){
     removeSet();
-    // 標題名稱
     title('edit');
-    // 個人資料
-    accountName.value = "Emir Wicks";
-    email.value = "emir.wicks@mail.com";
-    accountName.classList.add('readonlyStyle');
-    email.classList.add('readonlyStyle');
-    // verified
-    isVerified.classList.add('d-block');
-    // Access Level
-    accessLevel.value = "admin";
+    person('edit');
+    verified('edit');
+    access('edit');
     // isDectivate
     isDectivate.classList.add('d-block');
   })
@@ -63,6 +65,35 @@ if (document.title === "首頁"){
       modalTitle.textContent = 'New Admin';
     } else if (value === 'edit') {
       modalTitle.textContent = 'Edit Admin';
+    }
+  }
+  // 個人資料
+  function person(value){
+    if (value === 'new') {
+      accountName.value = "";
+      email.value = "";
+    } else if (value === 'edit') {
+      accountName.value = "Emir Wicks";
+      email.value = "emir.wicks@mail.com";
+      accountName.classList.add('readonlyStyle');
+      email.classList.add('readonlyStyle');
+    }
+  }
+  // verified
+  function verified(value) {
+    if (value === 'new') {
+      notVerified.classList.add('d-block');
+    } else if (value === 'edit') {
+      isVerified.classList.add('d-block');
+    }
+  }
+
+  // accessLevel
+  function access(value) {
+    if (value === 'new') {
+      accessLevel.value = "";
+    } else if (value === 'edit') {
+      accessLevel.value = "admin";
     }
   }
 

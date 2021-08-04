@@ -53,7 +53,19 @@
       margin: 0;
     }
   }
-} 
+}
+
+.expandLess{
+  display: none;
+}
+
+.sendMailBtn{
+  color: $success;
+  &:hover{
+    background: $success;
+    color: $white;
+  }
+}
 
 .notVerified{
   display: none;
