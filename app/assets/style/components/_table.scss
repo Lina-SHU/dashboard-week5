@@ -1,0 +1,10 @@
+.table{
+  margin-bottom: $spacer*4;
+  tr{
+    cursor: pointer;
+  }
+  td{
+    padding-top: $spacer;
+    padding-bottom: $spacer;
+  }
+}

@@ -1,57 +1,9 @@
-.table{
-  margin-bottom: $spacer*4;
-  tr{
-    cursor: pointer;
-  }
-}
-
-.pagination{
-  .page-link{
-    border: 1px solid $success;
-    color: $gray-900;
-    &:hover{
-      color: $white;
-      background: $success;
-    }
-  }
-  .page-item.active .page-link{
-    color: $white;
-    background: $success;
-    border-color: $success;
-  }
-  .page-link-icon{
-    padding: 4px;
-    height: 100%;
-    color: $success;
-  }
-}
-
-.table{
-  thead{
-    i{
-      font-size: 12px;
-    }
-  }
-  td{
-    padding-top: $spacer;
-    padding-bottom: $spacer;
-  }
-}
-
 .person-content{
   width: 141px;
   img{
     width: 141px;
     height: 141px;
     object-fit: cover;
-  }
-}
-
-.modal{
-  .modal-footer{
-    button{
-      margin: 0;
-    }
   }
 }
 
@@ -73,6 +25,19 @@
 
 .isVerified{
   display: none;
+}
+
+.notVerified{
+  button{
+    border-color: $gray-400;
+  }
+}
+
+.isVerified{
+  button{
+    border-color: $gray-400;
+    color: $gray-400;
+  }
 }
 
 .isDectivate{
