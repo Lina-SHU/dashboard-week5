@@ -1,0 +1,19 @@
+.navbar-nav{
+  .nav-item{
+    margin-bottom: 12px;
+  }
+  .nav-link{
+    color: $gray-900;
+    padding-left: $spacer*2;
+    &:hover{
+      color: $success;
+      padding-left: 28px;
+      border-left: 4px solid $success;
+    }
+  }
+  .active{
+    color: $success;
+    padding-left: 28px;
+    border-left: 4px solid $success;
+  }
+}
