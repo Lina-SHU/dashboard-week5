@@ -11957,15 +11957,6 @@ code {
   font-family: "Roboto Mono", monospace;
 }
 
-.notVerified button {
-  border-color: #ced4da;
-}
-
-.isVerified button {
-  border-color: #ced4da;
-  color: #ced4da;
-}
-
 /* header */
 .header {
   position: fixed;
@@ -12014,6 +12005,41 @@ code {
 
 .author p {
   font-size: 0.875rem;
+}
+
+.pagination .page-link {
+  border: 1px solid #198754;
+  color: #212529;
+}
+
+.pagination .page-link:hover {
+  color: #fff;
+  background: #198754;
+}
+
+.pagination .page-item.active .page-link {
+  color: #fff;
+  background: #198754;
+  border-color: #198754;
+}
+
+.pagination .page-link-icon {
+  padding: 4px;
+  height: 100%;
+  color: #198754;
+}
+
+.table {
+  margin-bottom: 4rem;
+}
+
+.table tr {
+  cursor: pointer;
+}
+
+.table td {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .list-group-item {
@@ -12068,45 +12094,6 @@ code {
   margin-bottom: 150px;
 }
 
-.table {
-  margin-bottom: 4rem;
-}
-
-.table tr {
-  cursor: pointer;
-}
-
-.pagination .page-link {
-  border: 1px solid #198754;
-  color: #212529;
-}
-
-.pagination .page-link:hover {
-  color: #fff;
-  background: #198754;
-}
-
-.pagination .page-item.active .page-link {
-  color: #fff;
-  background: #198754;
-  border-color: #198754;
-}
-
-.pagination .page-link-icon {
-  padding: 4px;
-  height: 100%;
-  color: #198754;
-}
-
-.table thead i {
-  font-size: 12px;
-}
-
-.table td {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .person-content {
   width: 141px;
 }
@@ -12116,10 +12103,6 @@ code {
   height: 141px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.modal .modal-footer button {
-  margin: 0;
 }
 
 .expandLess {
@@ -12141,6 +12124,15 @@ code {
 
 .isVerified {
   display: none;
+}
+
+.notVerified button {
+  border-color: #ced4da;
+}
+
+.isVerified button {
+  border-color: #ced4da;
+  color: #ced4da;
 }
 
 .isDectivate {
