@@ -11974,6 +11974,18 @@ code {
   height: 40px;
 }
 
+.author .author-img img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.author p {
+  font-size: 0.875rem;
+}
+
 .navbar-nav .nav-item {
   margin-bottom: 12px;
 }
@@ -11993,18 +12005,6 @@ code {
   color: #198754;
   padding-left: 28px;
   border-left: 4px solid #198754;
-}
-
-.author .author-img img {
-  width: 40px;
-  height: 40px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
-}
-
-.author p {
-  font-size: 0.875rem;
 }
 
 .pagination .page-link {
