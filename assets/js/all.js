@@ -1,6 +1,6 @@
 "use strict";
 
-if (document.title === "首頁") {
+if (document.title === "Assignment") {
   var confirmGroup = document.querySelector('.confirmGroup');
   var authorReply = document.querySelector('.author-reply');
   var authorEdit = document.querySelector('.author-edit');
@@ -19,7 +19,7 @@ if (document.title === "首頁") {
     assignment.classList.remove('hideStyle');
     authorEdit.classList.remove('d-block');
   });
-} else if (document.title === "管理頁") {
+} else if (document.title === "Admin") {
   // title name
   var title = function title(value) {
     if (value === 'new') {
