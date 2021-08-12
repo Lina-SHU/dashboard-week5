@@ -5,12 +5,11 @@
 
 @import './base';
 @import './mixin';
-@import './util';
 @import './layout';
 
 @import './components/nav';
 @import './components/pagination';
 @import './components/table';
 
-@import './layout/index.scss';
-@import './layout/admin.scss';
+@import './pages/index';
+@import './pages/admin';

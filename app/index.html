@@ -1,8 +1,8 @@
 ---
-title: 首頁
+title: Assignment
 layout: ./app/layout.ejs
 engine: ejs
-current: index
+current: assignment
 ---
 
 <main class="main p-5">
@@ -98,7 +98,7 @@ current: index
                 padding/margin. <br>
                 What is the gap or extra space below image?
               </p>
-              <button class="btn btn-light rounded fw-bold border py-2">
+              <button class="btn btn-light rounded fw-bold border py-2 downloadBtn">
                 <i class="material-icons me-2">attach_file</i>
                 HW-2-David.zip
               </button>
@@ -159,9 +159,9 @@ current: index
           <a href="#" class="me-4"><i class="material-icons">attachment</i></a>
           <a href="#" class="me-4"><i class="material-icons">code</i></a>
         </div>
-        <div class="card-body py-3 px-4">
-          <p class="text-secondary">Reply an answer…</p>
-          <div class="text-end">
+        <div class="card-body p-0 position-relative">
+          <textarea name="reply" rows="10" placeholder="Reply an answer…" class="form-control text-secondary border-0 w-100 py-3 px-4"></textarea>
+          <div class="text-end position-absolute editBtns">
             <button class="btn btn-outline-success me-3 py-2 px-5 cancelBtn">
               Cancel
             </button>

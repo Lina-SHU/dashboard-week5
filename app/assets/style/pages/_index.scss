@@ -45,3 +45,14 @@
     }
   }
 }
+
+.downloadBtn{
+  &:hover{
+    background: $gray-300;
+  }
+}
+
+.editBtns{
+  bottom: $spacer;
+  right: 24px;
+}

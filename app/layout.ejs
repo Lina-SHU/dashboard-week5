@@ -13,13 +13,12 @@
 </head>
 
 <body>
-  <header class="header bg-light d-flex flex-column">
-    <h1 class="p-4"><a href="#" class="d-block">
-        Administration
+  <nav class="header navbar bg-light d-block py-0">
+    <div class="d-flex flex-column vh-100">
+      <a class="navbar-brand d-block p-4 m-0" href="#">
+        <h1 class="mb-0">Administration</h1>
       </a>
-    </h1>
-    <nav class="navbar d-block">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav d-block">
         <li class="nav-item">
           <a class="nav-link py-1" href="#">
             <i class="material-icons me-3">insert_chart</i>
@@ -33,7 +32,8 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active py-1 assignmentPage" href="./index.html">
+          <a class="nav-link py-1 assignmentPage
+                        <%- current == 'assignment'? 'active': '' %>" href="./index.html">
             <i class="material-icons me-3">assignment</i>
             Assignment
           </a>
@@ -45,7 +45,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link py-1 adminPage" href="./admin.html">
+          <a class="nav-link py-1 adminPage <%- current == 'admin' ? 'active': '' %>" href="./admin.html">
             <i class="material-icons me-3">group</i>
             Admin
           </a>
@@ -57,17 +57,17 @@
           </a>
         </li>
       </ul>
-    </nav>
-    <div class="author d-flex align-items-center p-5 mt-auto">
-      <div class="author-img me-3">
-        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/andychen.jpeg" alt="author">
-      </div>
-      <div class="author-content">
-        <h2 class="h6 mb-1">Andy Chen</h2>
-        <p class="mb-0 text-secondary">andy0401@mail.com</p>
+      <div class="author d-flex align-items-center p-5 mt-auto">
+        <div class="author-img me-3">
+          <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/andychen.jpeg" alt="author">
+        </div>
+        <div class="author-content">
+          <h2 class="h6 mb-1">Andy Chen</h2>
+          <p class="mb-0 text-secondary">andy0401@mail.com</p>
+        </div>
       </div>
     </div>
-  </header>
+  </nav>
   
   <%- contents %>
 

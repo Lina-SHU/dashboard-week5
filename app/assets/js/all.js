@@ -1,4 +1,4 @@
-if (document.title === "首頁"){
+if (document.title === "Assignment"){
   const confirmGroup = document.querySelector('.confirmGroup');
   const authorReply = document.querySelector('.author-reply');
   const authorEdit = document.querySelector('.author-edit');
@@ -19,7 +19,7 @@ if (document.title === "首頁"){
     assignment.classList.remove('hideStyle');
     authorEdit.classList.remove('d-block');
   })
-} else if (document.title === "管理頁"){
+} else if (document.title === "Admin"){
   /* collapse */
   const collapseBtn = document.querySelector('.collapseBtn');
   const expandMore = document.querySelector('.expandMore');
